@@ -1,8 +1,8 @@
 use 5.022;
 use Test2::V0 -no_srand => 1;
-use App::castyml;
+use Test::Script;
 
-ok 1, 'todo';
+script_compiles 'bin/castyml';
 
 done_testing;
 

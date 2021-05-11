@@ -1,0 +1,63 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use 5.020;
+use lib::findbin '../lib'; # dev-only
+use App::castyml;
+
+# PODNAME: castyml
+# ABSTRACT: C-family abstract syntax tree output to YAML
+# VERSION
+
+=head1 SYNOPSIS
+
+ castyml [ -raw | -r ] [ -function | -f regex ] csource.c [ ... ]
+ castyml --help | -h
+ castyml --version | -v
+
+=head1 DESCRIPTION
+
+The L<castyml> tool takes introspected C code from C<castxml> and
+denormalizes some of it to make it easier to see how the
+different objects inter-relate.  It outputs into L<YAML> format
+instead of C<XML>, which I find easier to read.
+
+=head1 OPTIONS
+
+=head2 --raw | -r
+
+ $ castyml -r foo.c
+
+Prints the raw data structures from C<castxml> without denormalization.
+(It is still will be in L<YAML> format though).
+
+=head2 --function | -f regex
+
+ $ castyml -f '^archive'
+
+Display only the top level functions that match the given regular expression.
+
+=head2 --help | -h
+
+ $ castyml -h
+
+Displays the documentation for L<castyml> and quits.
+
+=head2 --version | -v
+
+Displays the version of L<castyml> and quits.
+
+=head1 SEE ALSO
+
+=over 4
+
+=item L<Clang::CastXML>
+
+Interface to C<castxml>
+
+=back
+
+=cut
+
+exit App::castyml->main(@ARGV);
