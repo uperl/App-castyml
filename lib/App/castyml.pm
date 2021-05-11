@@ -12,6 +12,24 @@ use experimental qw( signatures postderef );
 # ABSTRACT: C-family abstract syntax tree output to YAML
 # VERSION
 
+=head1 SYNOPSIS
+
+ perldoc castyml
+
+=head1 DESCRIPTION
+
+This module provides the private machinery for L<castyml>.  See its documentation for usage.
+
+=head1 SEE ALSO
+
+=over 4
+
+=item L<castyml>
+
+=back
+
+=cut
+
 sub main
 {
   local (undef, @ARGV) = @_;
