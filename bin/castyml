@@ -18,7 +18,7 @@ use App::castyml;
 
 =head1 DESCRIPTION
 
-The <castyml> tool takes introspected C code from C<castxml> and
+The L<castyml> tool takes introspected C code from C<castxml> and
 denormalizes some of it to make it easier to see how the
 different objects inter-relate.  It outputs into L<YAML> format
 instead of C<XML>, which I find easier to read.

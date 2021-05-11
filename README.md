@@ -12,7 +12,7 @@ castyml --version | -v
 
 # DESCRIPTION
 
-The &lt;castyml> tool takes introspected C code from `castxml` and
+The [castyml](https://metacpan.org/pod/castyml) tool takes introspected C code from `castxml` and
 denormalizes some of it to make it easier to see how the
 different objects inter-relate.  It outputs into [YAML](https://metacpan.org/pod/YAML) format
 instead of `XML`, which I find easier to read.
