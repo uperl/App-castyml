@@ -10,9 +10,12 @@ my %modules;
 my $post_diag;
 
 $modules{$_} = $_ for qw(
+  Clang::CastXML
   ExtUtils::MakeMaker
+  Path::Tiny
   Test2::V0
   Test::Script
+  YAML
 );
 
 
