@@ -2,4 +2,7 @@ App-castyml-*
 /.build/
 *.swp
 
-
+/App-castyml-*
+/.build
+*.old
+*.orig
